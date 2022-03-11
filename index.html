@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>陰陽師</title>
+</head>
+
+<body>
+    <div id="hamburger">
+        <div class="hamT"></div>
+        <div class="hamM"></div>
+        <div class="hamM"></div>
+        <div class="hamB"></div>
+    </div>
+    <header class="header">
+        <nav class="top-nav">
+            <ul class="menu">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="#character">主角介紹</a></li>
+                <li><a href="#shikigami">式神介紹</a></li>
+                <li><a href="#video">影片</a></li>
+                <li><a href="#article">同人文</a></li>
+            </ul>
+            <figure class="logo"><img src="./images/easy-logo.jpg" alt="logo"></figure>
+        </nav>
+        <video src="./images/y2meta.com - 【新SSR阿修羅】天域篇CG彩蛋·飛鳥之羽-(1080p).mp4" autoplay muted loop></video>
+    </header>
+    <section id="character" class="character">
+        <h2 class="title">主角介紹</h2>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1"><img src="./images/晴明.png" alt=""></a></li>
+                <li><a href="#tabs-2"><img src="./images/神樂.png" alt=""></a></li>
+                <li><a href="#tabs-3"><img src="./images/博雅.png" alt=""></a></li>
+                <li><a href="#tabs-4"><img src="./images/比丘尼.png" alt=""></a></li>
+            </ul>
+            <div id="tabs-1">
+                <h2>安倍晴明</h2>
+                <p class="cv">cv：杉山紀彰</p>
+                <p>京都城中極具盛名的天才陰陽師</p>
+                <p>却不知爲何失去了自己的記憶</p>
+                <p>等待著他的是尋回記憶的喜悅</p>
+                <p>還是不堪回首的殘忍真相</p>
+            </div>
+            <div id="tabs-2">
+                <h2>神樂</h2>
+                <p class="cv">cv：釘宮理惠</p>
+                <p>善良而沉默的神秘少女</p>
+                <p>失憶後便跟隨在晴明身邊</p>
+                <p>擁有敏銳的直覺和强大的通靈能力</p>
+                <p>以及不爲人知的過去</p>
+            </div>
+            <div id="tabs-3">
+                <h2>源博雅</h2>
+                <p class="cv">cv：鈴木達央</p>
+                <p>擁有皇室血統的貴族青年</p>
+                <p>擅長弓術與結界之術</p>
+                <p>性情孤傲爽直</p>
+                <p>但似乎一直在尋找某個重要的人</p>
+            </div>
+            <div id="tabs-4">
+                <h2>八百比丘尼</h2>
+                <p class="cv">cv：澤城美雪</p>
+                <p>因誤食人魚肉而不老不死</p>
+                <p>能力超凡的流浪占卜師</p>
+                <p>一直在鳳凰林中等待著</p>
+                <p>占卜之夢預言的命運之人</p>
+            </div>
+        </div>
+    </section>
+    <section id="shikigami" class="shikigami">
+        <h2 class="title">式神介紹</h2>
+        <div class="card-line">
+            <div class="card">
+                <img src="./images/荒.png" class="card-img-top" alt="荒">
+                <div class="card-body">
+                    <h5 class="card-title">荒</h5>
+                    <div class="card-text">
+                        <p>荒可以说是输出型式神，修改之後雖然沒有之前的爆炸，但是也是非常頂级的輸出之一！</p>
+                        <p>不過由於對單體的傷害是持續遞減的，所以在打鬼王和石距等玩法時，是一個很大的硬傷。</p>
+                        <p>但是總體而言，依舊是一個十分爆炸的式神，本來100%的協戰現在只剩50%，已经縮小和姑獲鳥的差距了~</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cv">cv：平川大輔</li>
+                    <li class="list-group-item still">
+                        <div>
+                            <figure><img src="./images/星軌.png" alt="星軌"></figure>
+                            <p>星軌</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/星辰之境.png" alt="星辰之境"></figure>
+                            <p>星辰之境</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/天罰.星.png" alt="天罰.星"></figure>
+                            <p>天罰.星</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="data">
+                            <div>
+                                <li>
+                                    <dl>
+                                        <dt>攻　擊</dt>
+                                        <dd>S</dd>
+                                        <dd>3323</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>生　命</dt>
+                                        <dd>C</dd>
+                                        <dd>10251</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>防　禦</dt>
+                                        <dd>A</dd>
+                                        <dd>490</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>速　度</dt>
+                                        <dd>D</dd>
+                                        <dd>104</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>爆　擊</dt>
+                                        <dd>S</dd>
+                                        <dd>10%</dd>
+                                    </dl>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.onmyojigame.com/zh/role/283.html" class="card-link">角色連結</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/一目連.png" class="card-img-top" alt="一目連">
+                <div class="card-body">
+                    <h5 class="card-title">一目連</h5>
+                    <div class="card-text">
+                        <p>一目連技能特點是套盾，二技能和三技能分别是單個（全體）套盾。</p>
+                        <p>如果在持續時間内這個盾被打破，則對敵方全體造成一定量的傷害，</p>
+                        <p>所以說一目連是一個能夠很好保護隊友的輔助型SSR。</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cv">cv：綠川光</li>
+                    <li class="list-group-item still">
+                        <div>
+                            <figure><img src="./images/風符.破.png" alt="風符.破"></figure>
+                            <p>風符.破</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/風符.護.png" alt="風符.護"></figure>
+                            <p>風符.護</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/風神之佑.png" alt="風神之佑"></figure>
+                            <p>風神之佑</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="data">
+                            <div>
+                                <li>
+                                    <dl>
+                                        <dt>攻　擊</dt>
+                                        <dd>B</dd>
+                                        <dd>103</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>生　命</dt>
+                                        <dd>S</dd>
+                                        <dd>1206</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>防　禦</dt>
+                                        <dd>A</dd>
+                                        <dd>61</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>速　度</dt>
+                                        <dd>S</dd>
+                                        <dd>107</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>爆　擊</dt>
+                                        <dd>B</dd>
+                                        <dd>5%</dd>
+                                    </dl>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.onmyojigame.com/zh/role/272.html" class="card-link">角色連結</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-line">
+            <div class="card">
+                <img src="./images/酒吞童子.png" class="card-img-top" alt="酒吞童子">
+                <div class="card-body">
+                    <h5 class="card-title">酒吞童子</h5>
+                    <div class="card-text">
+                        <p>酒吞童子的定位是輸出，其最大亮點是不耗火以及超強的後期能力。作为SSR级式神，</p>
+                        <p>酒吞童子還是值得培養的，用来打石距、鬼王、鬥技，甚至是一些黑科技的陣容裡都能起到非常大的作用。</p>
+                        <p>不過他也有個缺點，就是不能带狗糧，初期還是不建議培養。</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cv">cv：阪口周平</li>
+                    <li class="list-group-item still">
+                        <div>
+                            <figure><img src="./images/鬼葫蘆.png" alt="鬼葫蘆"></figure>
+                            <p>鬼葫蘆</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/狂氣.png" alt="狂氣"></figure>
+                            <p>狂氣</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/狂嘯.png" alt="狂嘯"></figure>
+                            <p>狂嘯</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="data">
+                            <div>
+                                <li>
+                                    <dl>
+                                        <dt>攻　擊</dt>
+                                        <dd>S</dd>
+                                        <dd>128</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>生　命</dt>
+                                        <dd>B</dd>
+                                        <dd>928</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>防　禦</dt>
+                                        <dd>C</dd>
+                                        <dd>61</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>速　度</dt>
+                                        <dd>S</dd>
+                                        <dd>113</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>爆　擊</dt>
+                                        <dd>S</dd>
+                                        <dd>10%</dd>
+                                    </dl>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.onmyojigame.com/zh/role/219.html" class="card-link">角色連結</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/茨木童子.png" class="card-img-top" alt="茨木童子">
+                <div class="card-body">
+                    <h5 class="card-title">茨木童子</h5>
+                    <div class="card-text">
+                        <p>茨木童子的定位是輸出，其最大亮點是被動技能，擊敗敵人時，</p>
+                        <p>所有其他敵方單位均會受到此次攻擊溢出部分100%的傷害，溢出的100%傷害還無視防御，</p>
+                        <p>基本上就是一拳下去，全部秒殺的節奏，無論是刷本或者是打鬥技都是非常有力的，推薦培養。</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cv">cv：福山潤</li>
+                    <li class="list-group-item still">
+                        <div>
+                            <figure><img src="./images/黑焰.png" alt="黑焰"></figure>
+                            <p>黑焰</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/遷怒.png" alt="遷怒"></figure>
+                            <p>遷怒</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/地獄之手.png" alt="地獄之手"></figure>
+                            <p>地獄之手</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="data">
+                            <div>
+                                <li>
+                                    <dl>
+                                        <dt>攻　擊</dt>
+                                        <dd>S</dd>
+                                        <dd>128</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>生　命</dt>
+                                        <dd>B</dd>
+                                        <dd>864</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>防　禦</dt>
+                                        <dd>B</dd>
+                                        <dd>66</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>速　度</dt>
+                                        <dd>S</dd>
+                                        <dd>112</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>爆　擊</dt>
+                                        <dd>S</dd>
+                                        <dd>10%</dd>
+                                    </dl>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.onmyojigame.com/zh/role/265.html" class="card-link">角色連結</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-line">
+            <div class="card">
+                <img src="./images/花鳥卷.png" class="card-img-top" alt="花鳥卷">
+                <div class="card-body">
+                    <h5 class="card-title">花鳥卷</h5>
+                    <div class="card-text">
+                        <p>花鳥卷的技能特點和螢草很像，奶量足，而且自带速度加成，可以迅速抬高團隊的血量，</p>
+                        <p>在副本中相當實用，不過鬥技中想要撼動惠比壽的地位，還比較難，</p>
+                        <p>畢竟鬥技中考驗的是團隊的綜合能力，單純能奶是很難適應鬥技場的環境變化。</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cv">cv：早見沙織</li>
+                    <li class="list-group-item still">
+                        <div>
+                            <figure><img src="./images/歸鳥.png" alt="歸鳥"></figure>
+                            <p>歸鳥</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/畫境.png" alt="畫境"></figure>
+                            <p>畫境</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/花鳥相聞.png" alt="花鳥相聞"></figure>
+                            <p>花鳥相聞</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="data">
+                            <div>
+                                <li>
+                                    <dl>
+                                        <dt>攻　擊</dt>
+                                        <dd>C</dd>
+                                        <dd>251</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>生　命</dt>
+                                        <dd>S</dd>
+                                        <dd>2785</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>防　禦</dt>
+                                        <dd>C</dd>
+                                        <dd>99</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>速　度</dt>
+                                        <dd>S</dd>
+                                        <dd>115</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>爆　擊</dt>
+                                        <dd>B</dd>
+                                        <dd>15%</dd>
+                                    </dl>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.onmyojigame.com/zh/role/279.html" class="card-link">角色連結</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/青行燈.png" class="card-img-top" alt="青行燈">
+                <div class="card-body">
+                    <h5 class="card-title">青行燈</h5>
+                    <div class="card-text">
+                        <p>青行燈的定位是輸出與控制，她的優點在於高速低耗AOE+軟控（吸火）。</p>
+                        <p>經常可能一個技能下去，吸到對面的火，導致對面套路打不出來，從而崩盤。</p>
+                        <p>對於有抽到燈姐的小伙伴來說，小編推薦大家培養，畢竟速度快，吸火技能強，當然，優先級還是茨木、妖刀姬等大佬。</p>
+                    </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item cv">cv：水樹奈奈</li>
+                    <li class="list-group-item still">
+                        <div>
+                            <figure><img src="./images/幽光.png" alt="幽光"></figure>
+                            <p>幽光</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/明燈.png" alt="明燈"></figure>
+                            <p>明燈</p>
+                        </div>
+                        <div>
+                            <figure><img src="./images/吸魂燈.png" alt="吸魂燈"></figure>
+                            <p>吸魂燈</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <ul class="data">
+                            <div>
+                                <li>
+                                    <dl>
+                                        <dt>攻　擊</dt>
+                                        <dd>B</dd>
+                                        <dd>104</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>生　命</dt>
+                                        <dd>A</dd>
+                                        <dd>1014</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>防　禦</dt>
+                                        <dd>A</dd>
+                                        <dd>70</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>速　度</dt>
+                                        <dd>S</dd>
+                                        <dd>119</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>爆　擊</dt>
+                                        <dd>A</dd>
+                                        <dd>0%</dd>
+                                    </dl>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="https://www.onmyojigame.com/zh/role/266.html" class="card-link">角色連結</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video" class="video">
+        <h2 class="title">影片</h2>
+        <div class="video-content">
+            <div class="video-left">
+                <h3 class="video-title">陰陽師世界觀</h3>
+                <iframe width="700" height="430" src="https://www.youtube.com/embed/LSWPHFCf-gM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-right">
+                <h3 class="video-title">陰陽師玩法</h3>
+                <iframe width="700" height="430" src="https://www.youtube.com/embed/4nPQ9Z3D430" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="article" class="article">
+        <div class="article-box">
+            <h2 class="title">同人文</h2>
+            <p>　　荒和妹妹御饌津隨著父親搬來鄉下已經好一陣子了，已近弱冠的荒和外傅之年的御饌津年齡不僅差距甚大，興趣嗜好也截然不同，荒偏好待在家中閱覽書籍；御饌津則是少年心性愛往外探險，雖說並不到關係惡劣的地步，平時的噓寒問暖卻也不少，只不過最近妹妹的行為舉止卻有幾分說不上的怪異。 
+            也許是到了青春期吧，荒如是想著，看著妹妹有時偷偷摸摸地藏著腋著什麼回房，荒也從不過問，能藏在手裡的總不會是太糟糕的東西。但當他看著妹妹獻寶似地捧著一團黑炭向自己伸手，荒的心裡頓時起了教育妹妹的重責大任非自己莫屬的念頭。<br>
+            　　「御饌津，煤炭不是拿來玩的。」「哥哥你看清楚，這不是煤炭，鄰居的婆婆說，這是一隻灰塵精靈！」荒皺了皺眉，心裡對是否要打碎妹妹的幻想較之當年打碎聖誕老公公的幻想更糾結，但轉念一想御饌津畢竟十歲了，是該長大了。於是他盡可能地用自認為溫和的語氣說道：「御饌津，這個世界上是沒有精靈的，這只是普通的煤炭。」然而荒習以為常的生硬語氣果不其然使御饌津的幼小心靈被狠狠插了一箭，小女孩雙目含著珍珠般的淚，眼看就要掉下來了，仍不死心地回應：「這就是灰塵精靈，哥哥不肯相信，但媽媽一定會相信我的！」說完頭也不回地往門外衝去，荒有些頭疼，雖然沒有想惹妹妹難過，但事實就是事實，儘管還沒想好適當的回應，但也不能放任幼小的妹妹在即將入夜的鄉間田野亂跑。 <br>
+            　　天色很快地暗了下來，荒有些後悔沒帶外套就出門，但想到連鞋都沒穿的妹妹，他前進的步伐反而加快了。御饌津跑走的方向是他平常不會涉足的山區，眼看自己愈爬愈高卻仍不見妹妹蹤影，心裡愈發焦急了。淅淅瀝瀝的聲音響起，雨一點一點地從天而降，荒眉頭皺得更深了，黑夜、下雨、深山，哪一項都糟糕透頂。然而此時，一隻蛾吸引了他的目光，緊接著原本還是樹叢的風景，驟然變成一排立燈，立燈的盡頭是一座鳥居。荒懷疑自己的眼睛出了問題，剛要起步往鳥居去確認虛實，卻發現自己的腳動不了了，低頭一看，一團的"煤炭"緊緊附在他的鞋上，一個個歡樂的蠕動著。<br> 
+            　　「不可以喔。」溫潤如玉的聲音響起，荒猛然抬起頭看著一名穿著古樸的粉髮青年緩緩向自己走來，短短幾步的距離卻恍如隔世，荒不明白自己為何心跳加速、眼睛離不開這位素未謀面的青年、只是覺得他的每一步似乎都踏在自己的心上，讓自己的心跳不受控制。<br>
+            　　終於青年距離荒只剩五公分，荒想開口說些什麼，卻僅僅只能看著青年蹲下，對著圍住自己的"煤炭"說：「他不是什麼壞人，不可以讓人家困擾喔。」"煤炭"聽話地簇擁著離開了荒，青年站起身對荒笑了笑轉身就要離開。「慢著！」荒雖然有滿肚子的疑問，但當務之急是找到妹妹，而他下意識地覺得，眼前的青年幫得了他。青年回過身，微笑著問道：「有什麼我可以幫忙的嗎？」「我妹妹，御饌津走失了，請你……請你幫幫我！」青年低頭沉思了一會兒，抬起頭時帶著堅定的眼神：「我明白了。」隨後他向鳥居的方向招手，一條紅色的龍在荒訝異的眼神中直飛而來，青年拉著有些不清楚自己是否在做夢的荒騎上龍背，飛翔在高大的樹木上方開始搜尋。 <br>
+            　　兩人在龍背上搜索著、大喊著，月亮升至至高點時，他們在溪流旁發現昏迷的御饌津，荒著急地確認妹妹只是太累睡著而沒有外傷後，安心地鬆了一口氣，粉髮青年微笑著看著抱起御饌津的荒，向荒指明了回家的方向，這裡離村莊只有一小段距離。「我不方便離開這座山，很抱歉不能送你們回去。」青年無奈地笑著，而荒的心裡儘管有滿腹疑問，最終說出口的卻只有：「我還能再見到你嗎？」青年的背影頓了頓，回過頭給了荒一個燦爛的笑容：「只要你相信，緣分會使我們再度相見的。」 
+            　　曾經有人這麼問過荒，為什麼一個人住在這偏僻的鄉村，以他的能力，在都市發光發熱並不困難，為何屈居於此？又為何終身未婚？而荒會用他慣常的生硬語調和一雙柔情似水的眼眸，說出一個又一個關於山間守護神的故事，有人說他的故事真實得彷彿親身經歷，只有這時候，他會露出一個溫柔的表情。荒去世的當晚，御饌津夢見哥哥和粉髮青年牽著手，向她揮手後轉身離去。 
+            </p>
+        </div>
+    </section>
+    <footer>
+        <figure class="logo2"><img src="./images/easy-logo.jpg" alt="logo"></figure>
+        <div class="footer">
+            <div class="contect">
+                <span>官方客服郵箱：service@onmyojigame.com</span>
+                <span>官方客服電話：(02)2706-7199</span>
+                <span>臺灣遊戲代理：曼巴互娛股份有限公司</span>
+            </div>
+        </div>
+        <div class="copyright">
+            <ul class="media">
+                <li><a href=""><img src="./images/fb.png" alt=""></a></li>
+                <li><a href=""><img src="./images/ig.png" alt=""></a></li>
+                <li><a href=""><img src="./images/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="./images/youtube.png" alt=""></a></li>
+            </ul>
+            <small>2022 copyright&copy; 陰陽師 同人網站</small>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

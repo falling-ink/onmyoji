@@ -1,0 +1,794 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* eric reset end */
+
+body{
+    font-family: Arial,'黑體-繁','Heiti TC','微軟正黑體','Microsoft JhengHei', Helvetica, sans-serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+/* hamburger */
+#hamburger{
+    width: 3em;
+    height: 1.5em;
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    z-index: 1000;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    #hamburger{
+        display: block;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    #hamburger{
+        display: block;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    #hamburger{
+        display: none;
+    }
+}
+
+#hamburger *[class^=ham]{
+    width: 100%;
+    height: 2px;
+    background-color: #FFF;
+    position: absolute;
+    transition: all 400ms ease;
+}
+
+.hamT{
+    top: 0;
+}
+.hamM{
+    top: calc(0.5em / 2 + 6px);
+}
+.hamB{
+    bottom: 0;
+}
+
+/* header */
+.header{
+    overflow: hidden;
+    position: relative;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .header{
+        background-image: url(../images/header.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 65vh;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .header{
+        background-image: none;
+        height: 100vh;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .header{
+        background-image: none;
+        height: 100vh;
+    }
+}
+
+.top-nav{
+    background-color: #230304;
+    justify-content: space-around;
+    z-index: 999;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .top-nav{
+        height: 450px;
+        width: 390px;
+        position: absolute;
+        top: 70px;
+        left: 135px;
+        display: none;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .top-nav{
+        height: 495px;
+        width: 245px;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        display: none;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .top-nav{
+        height: 75px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.logo{
+    width: 150px;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.menu li{
+    width: 250px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.menu li a{
+    display: block;
+    text-decoration: none;
+    color: #FFFCDD;
+}
+
+.header video{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    filter: opacity(50%) brightness(150%);
+}
+
+/* character */
+.character{
+    background-color: #230304;
+    color: #FFFCDD;
+    text-align: center;
+    padding: 40px;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .character{
+        height: 80vh;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .character{
+        height: 100vh;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .character{
+        height: 100vh;
+    }
+}
+
+.title{
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 80px 0 0 0;
+
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .title{
+    font-size: 4rem;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .title{
+    font-size: 5rem;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .title{
+    font-size: 5rem;
+    }
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    #tabs ul li img{
+        width: 55px;
+    }
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        padding: .5em;
+    }
+    #tabs h2{
+        font-size: 3rem;
+    }
+    .cv{
+        font-size: 1.5rem;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    #tabs ul li img{
+        width: 133px;
+    }
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        padding: .5em 1em;
+    }
+    #tabs h2{
+        font-size: 4rem;
+    }
+    .cv{
+        font-size: 2rem;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    #tabs ul li img{
+        width: 150px;
+    }
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor{
+        padding: .5em 1em;
+    }
+    #tabs h2{
+        font-size: 3rem;
+    }
+    .cv{
+        font-size: 1.5rem;
+    }
+}
+
+#tabs h2{
+    margin: 10px;
+    font-weight: 600;
+    color: #230304;
+}
+
+
+#tabs p{
+    margin: 15px;
+}
+
+.cv{
+    color: #E0E38C;
+}
+
+/* jQuery ui */
+.ui-widget-header{
+    border: transparent;
+    background: none;
+}
+
+.ui-widget-content{
+    background: #FFFCDD;
+    text-align: left;
+    color: #AF160F;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .ui-widget-content{
+        margin: 30px 0;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .ui-widget-content{
+        margin: 30px;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .ui-widget-content{
+        margin: 30px;
+
+    }
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: transparent;
+    background: none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    border: transparent;
+    background: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: transparent;
+    background: none;
+}
+
+.ui-widget.ui-widget-content{
+    border: transparent;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .ui-widget.ui-widget-content{
+        width: 320px;
+        height: 400px;
+        margin: 50px 0;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .ui-widget.ui-widget-content{
+        width: 690px;
+        height: 500px;
+        margin: 150px 0;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .ui-widget.ui-widget-content{
+    width: 760px;
+    height: 500px;
+    margin: 150px 30%;
+    }
+}
+
+/* shikigami */
+.shikigami{
+    background-color: #FFFCDD;
+    text-align: center;
+    color: #AF160F;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .shikigami{
+        height: 900vh;
+    }
+    .card-line{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .shikigami{
+        height: 900vh;
+    }
+    .card-line{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .shikigami{
+        height: 455vh;
+    }
+    .card-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .card{
+        width: 360px;
+        margin: 75px 15px;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .card{
+        width: 620px;
+        margin: 75px 10%;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .card{
+        width: 500px;
+        margin: 75px 10%;
+    }
+}
+
+.card-title{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 3rem;
+    color: #230304;
+}
+
+.card-text p{
+    margin: 30px;
+    color: #C27257;
+}
+
+.still{
+    display: flex;
+}
+
+.still p{
+    color: #C27257;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .list-group-item figure{
+        width: 50px;
+        margin: 25px;
+    }
+    .data{
+        margin: 30px -10px;
+    }
+    .data li dl dt, .data li dl dd{
+        width: 69px;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .list-group-item figure{
+        width: 145px;
+        margin: 25px;
+    }
+    .data{
+        margin: 30px 35px;
+        width: 527px;
+        height: 122px;
+    }
+    .data li dl dt, .data li dl dd{
+        width: 105px;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .list-group-item figure{
+        width: 100px;
+        margin: 25px;
+    }
+    .data{
+        margin: 30px 55px;
+        width: 353px;
+        height: 122px;
+    }
+    .data li dl dt, .data li dl dd{
+        width: 70px;
+    }
+}
+
+.data{
+    border: 2px solid #E0E38C;
+}
+
+.data div{
+    display: flex;
+}
+
+.data li dl dt, .data li dl dd{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-right: 1px solid #E0E38C;
+    border-bottom: 1px solid #E0E38C;
+    color: #C27257;
+}
+
+.card-body a{
+    text-decoration: none;
+    color: #C27257;
+}
+
+/* video */
+.video{
+    background-color: #C27257;
+    text-align: center;
+    color: #E0E38C;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .video{
+        height: 120vh;
+    }
+    .video-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .video-left, .video-right{
+        margin: 40px 7%;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .video{
+        height: 140vh;
+    }
+    .video-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .video-left, .video-right{
+        margin: 40px 5%;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .video{
+        height: 85vh;
+    }
+    .video-content{
+        display: flex;
+        flex-direction: row;
+    }
+    .video-left, .video-right{
+        margin: 40px 7%;
+    }
+}
+
+.video-title{
+    margin: 40px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #230304;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    iframe{
+        width: 300px;
+        height: 184px;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    iframe{
+        width: 700px;
+        height: 430px;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    iframe{
+        width: 700px;
+        height: 430px;
+    }
+}
+
+/* article */
+.article{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #230304;
+}
+
+.article-box{
+    background-color: #e0e38ca8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .article-box{
+        padding: 0;
+        width: 100%;
+        height: 60vh;
+        margin: 0;
+    }
+    .article-box p{
+        margin: 50px;
+        font-size: x-large;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .article-box{
+        padding: 0 80px;
+        width: 80%;
+        height: 80vh;
+        margin: 0 10%;
+    }
+    .article-box p{
+        margin: 35px 0;
+        font-size: x-large;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .article-box{
+        padding: 0 80px;
+        width: 60%;
+        height: 100vh;
+        margin: 0 20%;
+    }
+    .article-box p{
+        margin: 80px;
+        font-size: xx-large;
+    }
+}
+
+.article-box p{
+    overflow: auto;
+    color: #C27257;
+    letter-spacing: .5rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+/* footer */
+footer{
+    background-color: #FFFCDD;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.footer{
+    display: flex;
+    margin-left: 40px;
+}
+
+.contect{
+    display: flex;
+    flex-direction: column;
+}
+
+.contect span, small{
+    color: #AF160F;
+    margin: 15px 10px 10px 15px;
+}
+
+.copyright{
+    text-align: right;
+}
+
+.media{
+    display: flex;
+    margin-left: 1000px;
+}
+
+small{
+    margin-left: 40px;
+    margin-top: 115px;
+}
+
+.media li{
+    width:55px;
+    margin: 40px 20px;
+}
+
+/* 小型設備 */
+@media (max-width:767px) {
+    .logo2{
+        width: 390px;
+    }
+    .media{
+        margin-left: 0;
+    }
+}
+/* 中型設備 */
+@media (min-width:768px) {
+    .logo2{
+        width: 300px;
+    }
+    .media{
+        margin-left: 370px;
+    }
+}
+/* 大型設備 */
+@media (min-width:992px) {
+    .logo2{
+        width: 150px;
+    }
+    .media{
+        margin-left: 1000px;
+    }
+}
